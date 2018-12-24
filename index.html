@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>E-shop</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="index">
+    <aside>
+        <div class="sidebar">
+        <div class="filter">
+            <p>Поиск по категориям: </p>
+            <ul class="category">
+
+            </ul>
+            <div class='price'>
+                <p>
+                    <label for="price-amount">В ценовом диапазоне:</label>
+                    <input type="text" id="price-amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                </p>
+
+                <div id="price-slider-range"></div>
+            </div>
+            <div class='weight'>
+                <p>
+                    <label for="weight-amount">По весу:</label>
+                    <input type="text" id="weight-amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                </p>
+
+                <div id="weight-slider-range"></div>
+            </div>
+        </div>
+        <div class ='mini-cart'>
+            <h3>В вашей корзине:</h3>
+            <ul>
+            </ul>
+            <div class="mini-cart-buttons">
+                <button id="showCart">Перейти в корзину</button>
+                <button id="clearCart">Очистить корзину</button>
+            </div>
+        </div>
+    </div>
+    </aside>
+    <div class="top-bar">
+        <div class="sorting">
+            <ul class="sort-by-cost">
+                <li><span>Стоимость</span></li>
+                <li class="inc">
+                    <a href="#">↑</a>
+                </li>
+                <li class="dec">
+                    <a href="#">↓</a>
+                </li>
+            </ul>
+            <ul class="sort-by-weight">
+                <li><span>Вес</span></li>
+                <li class="inc">
+                    <a href="#">↑</a>
+                </li>
+                <li class="dec">
+                    <a href="#">↓</a>
+                </li>
+            </ul>
+            <ul class="sort-by-popularity">
+                <li><span><span>Популярность</span></span></li>
+                <li class="inc">
+                    <a href="#">↑</a>
+                </li>
+                <li class="dec">
+                    <a href="#">↓</a>
+                </li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" id="search" placeholder="Поиск по названию">
+        </div>
+    </div>
+    <div class="catalog">
+
+    </div>
+    <main>
+
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="main_scripsts.js"></script>
+</body>
+</html>
